@@ -1,0 +1,24 @@
+#root{
+    color: red;
+}
+#javascript{
+    color:rgb(160, 50, 10);
+}
+#React{
+    color:crimson;
+}
+#heading{
+    color:rgb(129, 59, 96);
+}
+#parent{
+    color:rgb(200, 156, 219);
+}
+#child1{
+    color:rgb(109, 179, 109);
+}
+#child2{
+    color:rgb(133, 118, 36);
+}
+#supperChild{
+    color:rgb(145, 98, 17);
+}
