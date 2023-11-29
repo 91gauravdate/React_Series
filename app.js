@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM  from "react-dom/client";
+
 // using JavaScript
 
 const helloJS = document.createElement("h1");
@@ -8,9 +11,9 @@ usingJS.appendChild(helloJS);
 //  ****************************************************************************************************************************
 // using React 
 
-const HelloReact = React.createElement("h1",{id:"React"},"Hello World using React");
+const HelloReact = React.createElement("h1",{id:"Reactser"},"Hello World using React");
 
-const usingReact = ReactDOM.createRoot(document.getElementById("React"));
+const usingReact = ReactDOM.createRoot(document.getElementById("Reactser"));
 usingReact.render(HelloReact);
 
 // ********************************************************************************
