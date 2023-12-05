@@ -193,3 +193,40 @@ root.render(supperChild);
 
 # JSX-
 # Babel-  babeljs.io
+
+# How to show card detail dinamic
+
+ - using Props- Property- it is just normal arguments to a function
+  - passing arguments to a function.
+
+# configDrivenUi- 
+ - The UI is driven by config that shows realTime data or current data eg. current offers in UI, Current market price on that perticular Item etc.
+
+ # keys - why we used index as key
+  - suppose we have lots of cards in our app and I want to add one more new card but their is no id so in this case we can used index as key. i.e when we do not have ids in our cards so we can used index as key.
+  not using keys(not acceptable)>>>>>>>> index as key >>>>>>>>>>>>> unique id(best way)
+   -Eg.     const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="resto-container">
+        
+        {/* <RestorentCard  resData={resList[0]}/> or using loop or using map to render cards */}
+        {resList.map((restaurant,index)=> (
+        <RestorentCard key={index} resData={restaurant}/>
+
+        <!-- write way is -->
+
+         {resList.map((restaurant)=> (
+        <RestorentCard key={restaurant.data.id} resData={restaurant}/>
+
+        ))};
+      
+      </div>
+    </div>
+  );
+};
+
+ - but best way is to used the unique id for each card.
+
+ # React Hooks-
