@@ -1,6 +1,6 @@
 # React_Series - react.org
 Learn React_JS series 
-
+- React will make DOM operation /DOM manipulation suparfast and dinamic
 # Besics in reactjs from Episode-1.
 #index.html-
 <!DOCTYPE html>
@@ -229,4 +229,56 @@ root.render(supperChild);
 
  - but best way is to used the unique id for each card.
 
- # React Hooks-
+
+
+# File Stucture- React.org
+# Create Food Ordering Website- structure - 
+  - when we create folder or file eg. app.js or it can also write app.jsx dosent matter both are same 
+/**   Create the Food Ordering app
+ *
+ *  Header
+ *    - logo
+ *    - nav Items
+ *  Body
+ *    - search
+ *    - RestorentContainer
+ *    - RestorentCard
+ *  Footer
+ *    - Copywrite
+ *    - Links
+ *    - Address
+ *    - Contact
+ *
+ */
+
+ # utils or common or config-
+   - inside src folder we have utils file which can stores the hardcoded data like urls or <componentname/> etc.
+
+ # constants.js- 
+   - it containes all hardcoded data like url
+
+# Their are two types of export and import
+  Default- export default componentName
+           import componentName from "Path"
+
+  Named Export-
+        -Named Export- if we have export multiple things from same file we can used named export.
+    eg. export const LOGO_URL= "https://tse3.mm.bing.net/th?id=OIP.57f6MyAPMejoExdNmu3U1AHaFj&pid=Api&P=0&h=180";
+         or default export like export default component name.
+    import {componentName} from "Path"
+
+ # React Hooks- (Normal js utility function written by facebook)  - all utility function available inside react in node module i.e npm install react
+   - The react hooks is the normal js function which given by react
+   - It is pre-build
+   - the function which returns the supper power or logic 
+
+   - # Their is Two imp hooks/utility function in react-
+         - useState()- used to genereate superpowefull state veriables in react. Whenever a state veriable is update react re-renders the components
+            # used in react app-
+         -   useState()   - import {useState} from "react"   ------ named import.
+               // Local state veriable   const [listOfRestorents] = useState([null or object{} or default value pass])
+               // Normal JS veriable let listOfRestorents = [{.....}]
+         - useEffect()   -
+
+
+# render -   Whenever a state veriable is update react re-renders the components
